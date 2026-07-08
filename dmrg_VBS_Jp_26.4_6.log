@@ -1,0 +1,1262 @@
+INFO    : new simulation
+================================================================================
+GroundStateSearch
+================================================================================
+INFO    : change directory to results
+INFO    : output filename: dmrg_VBS_Jp_26.4_6.h5
+INFO    : use trivial cache (keeps everything in RAM)
+INFO    : GroundStateSearch: reading 'algorithm_params'={'trunc_params': {'svd_min': 1e-10, 'trunc_cut': 1e-10, 'chi_max': 1536}, 'chi_list': {0: 50, 20: 512, 40: 1024, 60: 1536}, 'mixer': True, 'mixer_params': {'amplitude': 1e-05, 'decay': 2.0, 'disable_after': 15}, 'max_sweeps': 80, 'update_env': 0, 'max_E_err': 1e-08, 'start_env': 4, 'N_sweeps_check': 2, 'min_sweeps': 10}
+INFO    : No cache due to chi=1536 < cache_threshold_chi = 2000
+INFO    : use trivial cache (keeps everything in RAM)
+INFO    : GroundStateSearch: reading 'model_class'='SU2Model'
+INFO    : GroundStateSearch: subconfig 'model_params'=Config(<18 options>, 'model_params')
+INFO    : model_params: reading 'explicit_plus_hc'=True
+INFO    : model_params: reading 'lat_type'='ModTriangular'
+INFO    : model_params: reading 'bc_MPS'='infinite'
+INFO    : model_params: reading 'bc_x'='periodic'
+INFO    : model_params: reading 'bc_y'=0
+INFO    : model_params: reading 'Lx'=2
+INFO    : model_params: reading 'Ly'=4
+INFO    : model_params: reading 'Jh'=7.3
+INFO    : model_params: reading 'Jzzo'=-5.7
+INFO    : model_params: reading 'Jpmo'=0.3
+INFO    : model_params: reading 'Jpmo_phase'=2.2
+INFO    : model_params: reading 'Jppo'=4.4
+INFO    : model_params: reading 'Jp'=26.4
+INFO    : model_params: reading 'Jp_phase'=-1.8
+INFO    : model_params: reading 'Jzzs'=-29.3
+INFO    : model_params: reading 'Jpms'=19.5
+INFO    : model_params: reading 'Jpms_phase'=1.7
+INFO    : model_params: reading 'Jpps'=15.1
+INFO    : GroundStateSearch: subconfig 'initial_state_params'=Config(<4 options>, 'initial_state_params')
+INFO    : initial_state_params: reading 'method'='randomized'
+INFO    : calling InitialStateBuilder.randomized()
+INFO    : initial_state_params: reading 'randomized_from_method'='mps_product_state'
+INFO    : initial_state_params: reading 'product_state'=['updown', 'downdown', 'updown', 'downdown', 'updown', 'downdown', 'updown', 'downdown']
+INFO    : initial_state_params: subconfig 'randomize_params'=Config(<2 options>, 'randomize_params')
+INFO    : randomize_params: subconfig 'trunc_params'=Config(<1 options>, 'trunc_params')
+INFO    : randomize_params: reading 'N_steps'=10
+INFO    : trunc_params: reading 'chi_max'=50
+INFO    : --> time=10.000 + 0.000j, max(chi)=50, max(S)=3.78582, avg DeltaS=3.7326e+00, since last update: 13.7s
+INFO    : GroundStateSearch: reading 'algorithm_class'='TwoSiteDMRGEngine'
+INFO    : algorithm_params: subconfig 'trunc_params'=Config(<3 options>, 'trunc_params')
+INFO    : GMRES: reading 'N_min'=0
+INFO    : GMRES: reading 'res'=1e-11
+WARNING : /home/nkalline/U1_Wigner_Magnetism/Exercises/.venv/lib/python3.10/site-packages/tenpy/networks/mpo.py:3601: UserWarning: GMRES converged within tol=0.07033825519324467 in environment initialization, requested was tol=1e-11.
+  warnings.warn(msg)
+
+INFO    : GMRES: reading 'N_min'=0
+INFO    : GMRES: reading 'N_max'=20
+INFO    : GMRES: reading 'restart'=10
+INFO    : GMRES: reading 'res'=1e-11
+WARNING : /home/nkalline/U1_Wigner_Magnetism/Exercises/.venv/lib/python3.10/site-packages/tenpy/networks/mpo.py:3601: UserWarning: GMRES converged within tol=0.09651210090562608 in environment initialization, requested was tol=1e-11.
+  warnings.warn(msg)
+
+INFO    : algorithm_params: reading 'chi_list'={0: 50, 20: 512, 40: 1024, 60: 1536}
+INFO    : algorithm_params: reading 'start_env'=4
+INFO    : start environment_sweep
+INFO    : trunc_params: reading 'chi_max'=1536
+INFO    : trunc_params: reading 'svd_min'=1e-10
+INFO    : trunc_params: reading 'trunc_cut'=1e-10
+INFO    : algorithm_params: reading 'N_sweeps_check'=2
+INFO    : algorithm_params: subconfig 'mixer_params'=Config(<3 options>, 'mixer_params')
+INFO    : make measurements
+INFO    : measurements took 0.09s
+INFO    : algorithm_params: reading 'mixer'=True
+INFO    : activate DensityMatrixMixer with initial amplitude 1e-05
+INFO    : algorithm_params: reading 'max_sweeps'=80
+INFO    : Running sweep with optimization
+INFO    : Setting chi_max=50
+INFO    : activate DensityMatrixMixer with initial amplitude 1e-05
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997051
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998898
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998476
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 1.001688
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 1.003804
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998196
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999339
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999554
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 1.003503
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994613
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990177
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993551
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993716
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997943
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996923
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 1.005176
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996632
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999242
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969356
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975494
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.953767
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981893
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986309
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992361
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.948978
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984424
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998200
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976476
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999151
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978595
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969816
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993649
+INFO    : algorithm_params: reading 'update_env'=0
+INFO    : checkpoint after sweep 2
+energy=-32.1738548278808594, max S=1.8657585458745831, age=104, norm_err=2.8e-01
+Current memory usage 217.2MB, wall time: 30.1s
+Delta E = nan, Delta S = -8.9488e-01 (per sweep)
+max trunc_err = 1.3489e-02, max E_trunc = 9.0442e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : GroundStateSearch: reading 'save_every_x_seconds'=3600
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984367
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999643
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972008
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999674
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999442
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999985
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999944
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999962
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999989
+INFO    : checkpoint after sweep 4
+energy=-33.6510543823242188, max S=1.8770740550824174, age=136, norm_err=2.7e-02
+Current memory usage 217.2MB, wall time: 8.9s
+Delta E = -7.3860e-01, Delta S = -1.5797e-02 (per sweep)
+max trunc_err = 5.2439e-03, max E_trunc = 4.7192e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 6
+energy=-33.7137794494628906, max S=1.8916917511347568, age=168, norm_err=4.9e-03
+Current memory usage 217.2MB, wall time: 5.6s
+Delta E = -3.1363e-02, Delta S = 4.6743e-03 (per sweep)
+max trunc_err = 3.8530e-03, max E_trunc = 3.3710e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 8
+energy=-33.7261276245117188, max S=1.8973864419041511, age=200, norm_err=5.0e-03
+Current memory usage 217.2MB, wall time: 4.9s
+Delta E = -6.1741e-03, Delta S = 2.0086e-03 (per sweep)
+max trunc_err = 3.4398e-03, max E_trunc = 2.9364e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 10
+energy=-33.7270584106445312, max S=1.8965141770973633, age=232, norm_err=4.1e-03
+Current memory usage 217.2MB, wall time: 5.4s
+Delta E = -4.6539e-04, Delta S = 8.0213e-04 (per sweep)
+max trunc_err = 3.3108e-03, max E_trunc = 3.4143e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 12
+energy=-33.7243728637695312, max S=1.9010315015259922, age=264, norm_err=4.0e-03
+Current memory usage 217.2MB, wall time: 6.7s
+Delta E = 1.3428e-03, Delta S = 6.9485e-04 (per sweep)
+max trunc_err = 3.3068e-03, max E_trunc = 3.5583e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : algorithm_params: reading 'max_E_err'=1e-08
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 14
+energy=-33.7170257568359375, max S=1.9015646318303177, age=296, norm_err=4.7e-03
+Current memory usage 217.2MB, wall time: 4.8s
+Delta E = 3.6736e-03, Delta S = 2.9897e-04 (per sweep)
+max trunc_err = 3.2690e-03, max E_trunc = 4.1833e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : Disable mixer after 15 sweeps, final amplitude 3.0517578125e-10.
+INFO    : deactivate DensityMatrixMixer with final amplitude 3.0517578125e-10
+INFO    : checkpoint after sweep 16
+energy=-33.7207107543945312, max S=1.8987365005722496, age=328, norm_err=6.6e-03
+Current memory usage 217.2MB, wall time: 7.0s
+Delta E = -1.8425e-03, Delta S = 6.2068e-05 (per sweep)
+max trunc_err = 1.6139e-03, max E_trunc = 3.4906e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999989
+INFO    : checkpoint after sweep 18
+energy=-33.7336540222167969, max S=1.9016546123088560, age=360, norm_err=6.2e-03
+Current memory usage 217.2MB, wall time: 9.5s
+Delta E = -6.4716e-03, Delta S = 8.7280e-04 (per sweep)
+max trunc_err = 1.6139e-03, max E_trunc = 3.4528e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 20
+energy=-33.7402763366699219, max S=1.9026293467179130, age=392, norm_err=5.9e-03
+Current memory usage 217.2MB, wall time: 10.2s
+Delta E = -3.3112e-03, Delta S = 1.3030e-04 (per sweep)
+max trunc_err = 1.6180e-03, max E_trunc = 3.0273e-01
+chi: [50, 50, 50, 50, 50, 50, 50, 50]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : Setting chi_max=512
+INFO    : activate DensityMatrixMixer with initial amplitude 1e-05
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999987
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999966
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999967
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999868
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999920
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999926
+INFO    : checkpoint after sweep 22
+energy=-34.2277450561523438, max S=2.1999086874599829, age=424, norm_err=6.2e-03
+Current memory usage 5970.2MB, wall time: 3325.1s
+Delta E = -2.4373e-01, Delta S = 1.4681e-01 (per sweep)
+max trunc_err = 6.2390e-04, max E_trunc = 8.9722e-02
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 24
+energy=-34.2359352111816406, max S=2.2400233015809259, age=456, norm_err=4.9e-03
+Current memory usage 6018.8MB, wall time: 5225.6s
+Delta E = -4.0951e-03, Delta S = 1.8188e-02 (per sweep)
+max trunc_err = 3.0242e-04, max E_trunc = 1.2585e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+INFO    : checkpoint after sweep 26
+energy=-34.2206420898437500, max S=2.2485543916244781, age=488, norm_err=4.6e-03
+Current memory usage 6076.3MB, wall time: 4108.4s
+Delta E = 7.6466e-03, Delta S = 4.4411e-03 (per sweep)
+max trunc_err = 1.7639e-04, max E_trunc = 5.3101e-02
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982545
+INFO    : checkpoint after sweep 28
+energy=-34.2397308349609375, max S=2.2522175379345821, age=520, norm_err=5.2e-03
+Current memory usage 6076.3MB, wall time: 4780.9s
+Delta E = -9.5444e-03, Delta S = 1.3109e-03 (per sweep)
+max trunc_err = 1.2865e-04, max E_trunc = 6.2866e-02
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999935
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977634
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983254
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993719
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999889
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978023
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996238
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969661
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999803
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977907
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982074
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978345
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998927
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999668
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999913
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974605
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988688
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986627
+INFO    : checkpoint after sweep 30
+energy=-34.2396087646484375, max S=2.2592131033259983, age=552, norm_err=1.7e-02
+Current memory usage 6084.1MB, wall time: 7408.7s
+Delta E = 6.1035e-05, Delta S = 3.9370e-03 (per sweep)
+max trunc_err = 1.2267e-04, max E_trunc = 1.6772e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979379
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998633
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999916
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999791
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984807
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991624
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981247
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999903
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995398
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991259
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990925
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999876
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978173
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985197
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.961676
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989302
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982883
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997034
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983321
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.971837
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988527
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996014
+INFO    : checkpoint after sweep 32
+energy=-34.2243423461914062, max S=2.2572941094181176, age=584, norm_err=2.8e-02
+Current memory usage 6113.5MB, wall time: 8460.1s
+Delta E = 7.6332e-03, Delta S = -9.3868e-04 (per sweep)
+max trunc_err = 1.1948e-04, max E_trunc = 2.3907e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999914
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999883
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999942
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.965552
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999772
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980581
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.956405
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988992
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994556
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999702
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974939
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999851
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979153
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986091
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999114
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977781
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984302
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977703
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999882
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999803
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969021
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999847
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999902
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999905
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994894
+INFO    : checkpoint after sweep 34
+energy=-34.2297515869140625, max S=2.2640244220618149, age=616, norm_err=1.9e-02
+Current memory usage 6113.5MB, wall time: 8160.8s
+Delta E = -2.7046e-03, Delta S = -5.9680e-04 (per sweep)
+max trunc_err = 1.1910e-04, max E_trunc = 1.3202e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998714
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981091
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999935
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999908
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999895
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972248
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984044
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972949
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983270
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994456
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987609
+INFO    : Disable mixer after 35 sweeps, final amplitude 3.0517578125e-10.
+INFO    : deactivate DensityMatrixMixer with final amplitude 3.0517578125e-10
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979920
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999851
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979789
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.966477
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986485
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996240
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.961542
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976851
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974533
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983873
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979932
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999424
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981115
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986398
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999660
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999740
+INFO    : checkpoint after sweep 36
+energy=-34.2270011901855469, max S=2.2584230783757455, age=648, norm_err=3.4e-02
+Current memory usage 6113.5MB, wall time: 8485.4s
+Delta E = 1.3752e-03, Delta S = -1.1186e-04 (per sweep)
+max trunc_err = 5.7715e-05, max E_trunc = 1.3458e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996719
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999930
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978078
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996917
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988947
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990032
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996563
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967855
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998432
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978420
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985195
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994463
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989736
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981348
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977673
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999828
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978844
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979406
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973235
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974352
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.968709
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999581
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999798
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999646
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.953968
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982259
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998940
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980124
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991338
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999776
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973842
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996284
+INFO    : checkpoint after sweep 38
+energy=-34.1885490417480469, max S=2.2584278991184155, age=680, norm_err=3.5e-02
+Current memory usage 6113.5MB, wall time: 9030.0s
+Delta E = 1.9226e-02, Delta S = -1.3133e-03 (per sweep)
+max trunc_err = 6.1644e-05, max E_trunc = 5.0885e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.960530
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999878
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984074
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999774
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.947103
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999698
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.964803
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998104
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.942462
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967190
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997560
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972846
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975441
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991736
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975710
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999532
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981998
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998582
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967586
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999784
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999855
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975494
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973936
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980976
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997991
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.956966
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999393
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.971782
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986366
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973949
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999049
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.947071
+INFO    : checkpoint after sweep 40
+energy=-34.2386474609375000, max S=2.2629925468234271, age=712, norm_err=2.9e-02
+Current memory usage 6113.5MB, wall time: 9029.3s
+Delta E = -2.5049e-02, Delta S = 2.3294e-03 (per sweep)
+max trunc_err = 7.0567e-05, max E_trunc = 1.9073e-01
+chi: [512, 512, 512, 512, 512, 512, 512, 512]
+================================================================================
+INFO    : saving results to disk; took 0.5s
+INFO    : Running sweep with optimization
+INFO    : Setting chi_max=1024
+INFO    : activate DensityMatrixMixer with initial amplitude 1e-05
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988572
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999883
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.965655
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997589
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973084
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985720
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998587
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986358
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983795
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997903
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982237
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998808
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967050
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999801
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984514
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999514
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999520
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999928
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984534
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975848
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989125
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998717
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.961953
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999752
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.966834
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989799
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.968329
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999053
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990811
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999829
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981087
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999645
+INFO    : checkpoint after sweep 42
+energy=-34.2289886474609375, max S=2.2792259128725867, age=744, norm_err=2.5e-02
+Current memory usage 23098.1MB, wall time: 13962.6s
+Delta E = 4.8294e-03, Delta S = 1.0853e-02 (per sweep)
+max trunc_err = 3.2093e-04, max E_trunc = 2.7203e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.6s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986806
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999886
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999791
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999802
+INFO    : checkpoint after sweep 44
+energy=-34.2441253662109375, max S=2.2786971381189698, age=776, norm_err=5.1e-03
+Current memory usage 23238.7MB, wall time: 2062.0s
+Delta E = -7.5684e-03, Delta S = 1.5612e-03 (per sweep)
+max trunc_err = 1.2233e-04, max E_trunc = 1.3580e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976583
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994892
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982466
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992901
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997637
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979650
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998287
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978374
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996406
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995362
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999596
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979787
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999883
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999732
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986896
+INFO    : checkpoint after sweep 46
+energy=-34.2431144714355469, max S=2.2852631543994475, age=808, norm_err=1.1e-02
+Current memory usage 23609.6MB, wall time: 5601.3s
+Delta E = 5.0545e-04, Delta S = 3.3569e-03 (per sweep)
+max trunc_err = 6.6622e-05, max E_trunc = 1.3739e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.7s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972467
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999739
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976183
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979937
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982971
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999210
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993357
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999418
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999500
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.970623
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979464
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998496
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984738
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999391
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980489
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999183
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999730
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999931
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976058
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999685
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975983
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996671
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998072
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997497
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974267
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997266
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995574
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977181
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991426
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998281
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999834
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993037
+INFO    : checkpoint after sweep 48
+energy=-34.2341995239257812, max S=2.2891393000771894, age=840, norm_err=2.3e-02
+Current memory usage 23609.6MB, wall time: 10689.1s
+Delta E = 4.4575e-03, Delta S = 1.1590e-03 (per sweep)
+max trunc_err = 5.2097e-05, max E_trunc = 1.1749e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.7s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981594
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999756
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969833
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995147
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992115
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999819
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988066
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999398
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999411
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977177
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999139
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997727
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999785
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986064
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980898
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999592
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999395
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984862
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998113
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984398
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989550
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991190
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992376
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999838
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994813
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997375
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991831
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999527
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978760
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999048
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999912
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999854
+INFO    : checkpoint after sweep 50
+energy=-34.2462387084960938, max S=2.2908968432738974, age=872, norm_err=2.5e-02
+Current memory usage 23649.1MB, wall time: 11861.1s
+Delta E = -6.0196e-03, Delta S = 4.8478e-04 (per sweep)
+max trunc_err = 4.0422e-05, max E_trunc = 1.1328e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.7s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975511
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999474
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980807
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995299
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.971617
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999553
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979552
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998706
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995095
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990391
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998408
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999885
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976763
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983778
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986482
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999377
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976024
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996751
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997822
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979877
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989821
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999115
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996638
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998886
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993961
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999840
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985453
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999793
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992094
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983931
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997753
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998203
+INFO    : checkpoint after sweep 52
+energy=-34.2425727844238281, max S=2.2907766857964131, age=904, norm_err=1.6e-02
+Current memory usage 23649.1MB, wall time: 10599.2s
+Delta E = 1.8330e-03, Delta S = -1.4174e-03 (per sweep)
+max trunc_err = 4.5454e-05, max E_trunc = 1.2671e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.7s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991233
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996809
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995069
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977289
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989239
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999681
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977510
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999813
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967672
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999079
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975663
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999418
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978250
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999770
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983342
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998888
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998468
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997025
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981349
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989803
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999591
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982228
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999636
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999817
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991710
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986351
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982074
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999754
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985592
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999764
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984037
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999711
+INFO    : checkpoint after sweep 54
+energy=-34.2483978271484375, max S=2.2925915970617670, age=936, norm_err=2.5e-02
+Current memory usage 23649.1MB, wall time: 13869.9s
+Delta E = -2.9125e-03, Delta S = 2.0214e-03 (per sweep)
+max trunc_err = 3.6436e-05, max E_trunc = 2.0264e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.7s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992244
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998616
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.968159
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999613
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999891
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.968295
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981341
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999520
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978371
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999850
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976329
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999560
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979552
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999781
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999893
+INFO    : Disable mixer after 55 sweeps, final amplitude 3.0517578125e-10.
+INFO    : deactivate DensityMatrixMixer with final amplitude 3.0517578125e-10
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998852
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979106
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981529
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999649
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999804
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999782
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983576
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994640
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997702
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974969
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993569
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987134
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977862
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998461
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999671
+INFO    : checkpoint after sweep 56
+energy=-34.2562103271484375, max S=2.2895976253272674, age=968, norm_err=2.4e-02
+Current memory usage 23649.1MB, wall time: 9861.4s
+Delta E = -3.9062e-03, Delta S = -1.2799e-03 (per sweep)
+max trunc_err = 2.2812e-05, max E_trunc = 2.0587e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.6s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999180
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978580
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999223
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.967949
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997679
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973998
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988317
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999511
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985713
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991905
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996410
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995908
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989789
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999581
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982686
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999184
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993806
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999882
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.951066
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998291
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989626
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997475
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982967
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998742
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976155
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998287
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999286
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986300
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975153
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982641
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983847
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997826
+INFO    : checkpoint after sweep 58
+energy=-34.2793960571289062, max S=2.2827216600057891, age=1000, norm_err=3.7e-02
+Current memory usage 23649.1MB, wall time: 10543.9s
+Delta E = -1.1593e-02, Delta S = 2.4879e-04 (per sweep)
+max trunc_err = 2.2611e-05, max E_trunc = 1.0046e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 2.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.968401
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999533
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974282
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998762
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.966859
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998811
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999649
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999385
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999404
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982795
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980617
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996590
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996066
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975464
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995452
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999771
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976413
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999808
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989770
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998943
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979060
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997916
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987470
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998358
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996340
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.942285
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996715
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990823
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993585
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993780
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989269
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996176
+INFO    : checkpoint after sweep 60
+energy=-34.2256164550781250, max S=2.2915579856156723, age=1032, norm_err=3.2e-02
+Current memory usage 23649.1MB, wall time: 10452.0s
+Delta E = 2.6890e-02, Delta S = 3.1463e-03 (per sweep)
+max trunc_err = 2.4970e-05, max E_trunc = 2.7502e-01
+chi: [1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024]
+================================================================================
+INFO    : saving results to disk; took 0.6s
+INFO    : Running sweep with optimization
+INFO    : Setting chi_max=1536
+INFO    : activate DensityMatrixMixer with initial amplitude 1e-05
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985271
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999271
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998395
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979095
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999399
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990605
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979418
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999172
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998251
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999239
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985355
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996063
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990458
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992504
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989709
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999072
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999517
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989640
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976618
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997813
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.971000
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999638
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975439
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998580
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997687
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982133
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995981
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999388
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987289
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999687
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978483
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998971
+INFO    : checkpoint after sweep 62
+energy=-34.2470626831054688, max S=2.2916402366152280, age=1064, norm_err=2.4e-02
+Current memory usage 51046.6MB, wall time: 25061.7s
+Delta E = -1.0723e-02, Delta S = -2.2140e-03 (per sweep)
+max trunc_err = 1.5304e-04, max E_trunc = 6.1218e-02
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999238
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991473
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998251
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988842
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999290
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999861
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993296
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974779
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999406
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999773
+INFO    : checkpoint after sweep 64
+energy=-34.2436637878417969, max S=2.3035387305873938, age=1096, norm_err=2.2e-02
+Current memory usage 52081.3MB, wall time: 9219.8s
+Delta E = 1.6994e-03, Delta S = 2.2270e-03 (per sweep)
+max trunc_err = 1.0148e-04, max E_trunc = 6.0730e-02
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999585
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999921
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999877
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999938
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.969418
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999929
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979365
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996976
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979888
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992344
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998315
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999865
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989062
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996925
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999430
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999929
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999876
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981541
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995925
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995763
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990061
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988272
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998377
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986223
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999167
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999798
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985013
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999683
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999745
+INFO    : checkpoint after sweep 66
+energy=-34.2362899780273438, max S=2.3017813910215694, age=1128, norm_err=2.1e-02
+Current memory usage 52081.3MB, wall time: 21635.2s
+Delta E = 3.6869e-03, Delta S = 2.9367e-03 (per sweep)
+max trunc_err = 4.0338e-05, max E_trunc = 1.7279e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.1s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995568
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999154
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993332
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999772
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979193
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998031
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979277
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999766
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999411
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983428
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990376
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995848
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996744
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992404
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999261
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999463
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997158
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999297
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999914
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997342
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997205
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999374
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985290
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998794
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983198
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998586
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975472
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996887
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998073
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997604
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996929
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999852
+INFO    : checkpoint after sweep 68
+energy=-34.2397766113281250, max S=2.3201157913929982, age=1160, norm_err=2.6e-02
+Current memory usage 52168.3MB, wall time: 32574.9s
+Delta E = -1.7433e-03, Delta S = 1.3024e-03 (per sweep)
+max trunc_err = 3.2417e-05, max E_trunc = 1.9635e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.1s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997018
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999915
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984846
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999609
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998106
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987663
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997610
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984904
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979241
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999520
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975602
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998461
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979061
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987063
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999779
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999545
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996121
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981412
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997534
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999775
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972549
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998739
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.963893
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999599
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998768
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980727
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998587
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995375
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999056
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994667
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992692
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999872
+INFO    : checkpoint after sweep 70
+energy=-34.2471542358398438, max S=2.3014906858961353, age=1192, norm_err=4.1e-02
+Current memory usage 52168.3MB, wall time: 29744.9s
+Delta E = -3.6888e-03, Delta S = -1.2815e-03 (per sweep)
+max trunc_err = 3.2840e-05, max E_trunc = 1.0541e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.1s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999071
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987055
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997388
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997701
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999621
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984885
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999389
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999730
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998575
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999916
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999796
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982617
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997810
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999494
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981566
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999343
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999037
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982494
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996887
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984517
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991403
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998761
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996544
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999745
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997229
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997667
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998204
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999663
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985174
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990999
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985177
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 1.000047
+INFO    : checkpoint after sweep 72
+energy=-34.2489166259765625, max S=2.3049833822043517, age=1224, norm_err=2.4e-02
+Current memory usage 52743.8MB, wall time: 23082.2s
+Delta E = -8.8120e-04, Delta S = 3.9532e-04 (per sweep)
+max trunc_err = 2.6960e-05, max E_trunc = 2.4756e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999307
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998346
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999866
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976216
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999806
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997489
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999730
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999761
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978197
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999672
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987582
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999847
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987967
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990892
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995270
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999551
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997598
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999175
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.971614
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999084
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980842
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991223
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998062
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995279
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998184
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994652
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999245
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.986393
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999832
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990350
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.981795
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999839
+INFO    : checkpoint after sweep 74
+energy=-34.2361755371093750, max S=2.3038938280283556, age=1256, norm_err=1.8e-02
+Current memory usage 52743.8MB, wall time: 22007.1s
+Delta E = 6.3705e-03, Delta S = -3.7523e-04 (per sweep)
+max trunc_err = 2.3469e-05, max E_trunc = 1.6833e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978025
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999250
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994649
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973783
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999185
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997457
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977791
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994264
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995746
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999725
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.973331
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999831
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975506
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999424
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976068
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999629
+INFO    : Disable mixer after 75 sweeps, final amplitude 3.0517578125e-10.
+INFO    : deactivate DensityMatrixMixer with final amplitude 3.0517578125e-10
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976232
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991728
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993188
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999190
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985510
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992754
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.979901
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999282
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991206
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998333
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999673
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999094
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999838
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988439
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993553
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996181
+INFO    : checkpoint after sweep 76
+energy=-34.2626228332519531, max S=2.3020156375813734, age=1288, norm_err=2.7e-02
+Current memory usage 52743.8MB, wall time: 21711.8s
+Delta E = -1.3224e-02, Delta S = -1.7912e-04 (per sweep)
+max trunc_err = 1.6172e-05, max E_trunc = 1.0254e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998559
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978671
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999415
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999092
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999841
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999635
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996090
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.970906
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998444
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994763
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975820
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999234
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976921
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998629
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.965656
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998202
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.975331
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999551
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999656
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984979
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987521
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997742
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995645
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999582
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995297
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998659
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995109
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995285
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999464
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.983647
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.982524
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997944
+INFO    : checkpoint after sweep 78
+energy=-34.2705764770507812, max S=2.2982321645622008, age=1320, norm_err=2.7e-02
+Current memory usage 52743.8MB, wall time: 21002.3s
+Delta E = -3.9768e-03, Delta S = -1.4015e-03 (per sweep)
+max trunc_err = 1.4262e-05, max E_trunc = 1.9824e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974592
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997209
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985409
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999359
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977655
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998792
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.990688
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996826
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998339
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.972197
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.985799
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999458
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976329
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993157
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996226
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999358
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998288
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998271
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997574
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.977631
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999718
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.992082
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998455
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994292
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994303
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999035
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996861
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.980176
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.984202
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999602
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.974551
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999572
+INFO    : checkpoint after sweep 80
+energy=-34.2619056701660156, max S=2.3084861235607779, age=1352, norm_err=3.5e-02
+Current memory usage 52743.8MB, wall time: 21569.0s
+Delta E = 4.3354e-03, Delta S = 4.1212e-03 (per sweep)
+max trunc_err = 1.3427e-05, max E_trunc = 2.0343e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : saving results to disk; took 1.0s
+INFO    : Running sweep with optimization
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993686
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.991972
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997370
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.989360
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.996119
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999615
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.954685
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997659
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999282
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994867
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999172
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997894
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999501
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994064
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.995429
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.987430
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999340
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.964973
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.988431
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999807
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.976714
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999346
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.978106
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.993749
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999455
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997193
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.970042
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.998135
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.997509
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.994985
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999532
+WARNING : poorly conditioned H matrix in KrylovBased! |psi_0| = 0.999558
+INFO    : checkpoint after sweep 82
+energy=-34.2384300231933594, max S=2.2977433768581932, age=1384, norm_err=3.3e-02
+Current memory usage 52743.8MB, wall time: 21824.7s
+Delta E = 1.1738e-02, Delta S = -4.0860e-03 (per sweep)
+max trunc_err = 1.5844e-05, max E_trunc = 2.0245e-01
+chi: [1536, 1536, 1536, 1536, 1536, 1536, 1536, 1536]
+================================================================================
+INFO    : TwoSiteDMRGEngine: Maximum number of sweeps reached
+WARNING : final DMRG state not in canonical form up to norm_tol=1.00e-05: norm_err=3.30e-02
+WARNING : norm_err=3.30e-02 still too high after environment_sweeps
+WARNING : final DMRG state not in canonical form up to norm_tol_final=1.00e-10: norm_err=3.30e-02, calling psi.canonical_form()
+INFO    : TwoSiteDMRGEngine finished after 82 sweeps, max chi=1536
+INFO    : make measurements
+INFO    : measurements took 24.94s
+INFO    : saving results to disk; took 1.1s
+INFO    : finished simulation run
+================================================================================

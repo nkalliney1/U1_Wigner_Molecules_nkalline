@@ -1,0 +1,81 @@
+#!/usr/bin/env -S python -m tenpy -i su2_model
+# requires that `my_model.py` can be imported.
+
+simulation_class : GroundStateSearch
+
+directory: results
+output_filename_params:
+    prefix: dmrg_VBS
+    parts:
+        model_params.Jp: 'Jp_{0:.1f}'
+    suffix: .h5
+# skip_if_output_exists: True
+# overwrite_output: True
+save_every_x_seconds: 3600
+# save_psi: False  # don't save full wave function - less disk space, but can't resume/redo measurements!
+
+log_params:
+    to_stdout: WARNING  # always check this output - empty is good
+    to_file: INFO
+    # format: "{levelname:.4s} {asctime} {message}"
+
+model_class : SU2Model
+model_params :
+    explicit_plus_hc: True
+    #unit cell dims for iDMRG
+    Lx: 2
+    Ly: 4
+    bc_MPS: infinite
+    Jh: 7.3
+    Jzzs: -29.3
+    Jzzo: -5.7
+    Jp: 26.4
+    Jp_phase: -1.8
+    Jpms: 19.5
+    Jpms_phase: 1.7
+    Jpps: 15.1
+    Jpmo: 0.3
+    Jpmo_phase: 2.2
+    Jppo: 4.4
+    bc_x: periodic
+    bc_y: 0
+    lat_type: ModTriangular
+
+initial_state_params:
+  method: randomized
+  product_state:
+  - updown
+  - downdown
+  - updown
+  - downdown
+  - updown
+  - downdown
+  - updown
+  - downdown
+  randomized_from_method: mps_product_state
+  randomize_params:
+    N_steps: 10
+    trunc_params:
+      chi_max: 50
+algorithm_class: TwoSiteDMRGEngine
+algorithm_params:
+  trunc_params:
+    svd_min: 1.0e-10
+    trunc_cut: 1.0e-10
+    chi_max: 1536       # final/maximum chi
+  chi_list:
+    0:   50
+    20:  512
+    40:  1024
+    60:  1536
+  mixer: True
+  mixer_params:
+    amplitude: 1.e-5
+    decay: 2.0
+    disable_after: 15
+  max_sweeps: 80
+  update_env: 0
+  max_E_err: 1.0e-08
+  start_env: 4
+  N_sweeps_check: 2
+  min_sweeps: 10
